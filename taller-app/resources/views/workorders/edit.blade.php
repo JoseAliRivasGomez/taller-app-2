@@ -75,7 +75,7 @@
                                 @endif
                             @endforeach
                         </select></br>
-                        <label class="mt-5">Car Initial State:</label>
+                        <label class="mt-5">Initial State:</label>
                         <textarea class="mt-5" name="car_initial_state" rows="4" cols="50" required>{{$workorder->car_initial_state}}</textarea></br>
                         <label class="mt-5">Initial Date:</label>
                         <input class="mt-5" type="date" name="car_initial_date" required value="{{substr($workorder->car_initial_date, 0, 10)}}"></br>
@@ -96,7 +96,7 @@
                         Final Diagnostic
                         </h1>
 
-                        <label class="mt-5">Car Final State:</label>
+                        <label class="mt-5">Final State:</label>
                         <textarea class="mt-5" name="car_final_state" rows="4" cols="50">{{$workorder->car_final_state}}</textarea></br>
                         <label class="mt-5">Final Date:</label>
                         <input class="mt-5" type="date" name="car_final_date" value="{{substr($workorder->car_final_date, 0, 10)}}"></br>

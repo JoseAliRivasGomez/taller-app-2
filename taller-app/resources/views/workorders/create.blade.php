@@ -37,7 +37,7 @@
                             @endforeach
                         </select></br>
                        
-                        <label class="mt-5">Car Initial State:</label>
+                        <label class="mt-5">Initial State:</label>
                         <textarea class="mt-5" name="car_initial_state" rows="4" cols="50"  required></textarea></br>
 
                         <label class="mt-5">Initial Date:</label>

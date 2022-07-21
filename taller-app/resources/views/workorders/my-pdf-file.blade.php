@@ -34,7 +34,7 @@
                         </h1>
 
                         <h2 class="font-bold text-xl text-gray-800 leading-tight">
-                        Auto Parts
+                        Parts
                         </h2>
 
                         <table class="table-fixed">
@@ -50,7 +50,7 @@
                             </thead>
                             <tbody>
                                 @forelse ($pieces_workorder as $line)
-                                {{ $reparationCost += $line->piece->cost * $line->piece->quantity }}
+                                {{ $reparationCost += $line->piece->cost * $line->quantity }}
                                 <tr>
                                 <td>{{$line->quantity}}</td>
                                 <td>{{$line->piece->description}}</td>
@@ -92,7 +92,7 @@
                         <p>{{ $car_final_state }} </p>
 
                         <h2 class="font-bold text-xl text-gray-800 leading-tight">
-                        Client Sign
+                        Client Signature
                         </h2>
 
                         @if ($client_sign)
